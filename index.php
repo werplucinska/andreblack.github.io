@@ -1,15 +1,15 @@
-<html>
+<html lang="pl">
     <head>
         <title>Gambino infspec</title>
-        <link rel="stylesheet" href="/gambino/css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
     </head>
     <body>
-        <nav>
-            <table>
-                <tr><th><a href="#" class="nav-link-a">Main</a></th></tr>
-                <tr><th><a href="#" class="nav-link-a">Categories</a></th></tr>
-            </table>
-        </nav>
+        <?php
+            include('nav-inc.html');
+            include('cat-inc.html');
+            include('main-inc.html');
+        ?>
     </body>
 </html>

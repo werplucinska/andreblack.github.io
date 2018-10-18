@@ -2,8 +2,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0 auto;
     background-color: #333;
-    color: palegreen;
-    font-size: 25px;
+    color: white;
 }
 
 nav{
@@ -20,7 +19,7 @@ input[type="search"]{
     height: 2rem;
     padding: 0.3rem 0.5rem;
     margin-top: 1.2rem;
-    margin-left: 6rem;
+    margin-left: 10%;
     border: 0px solid #000;
     color: rgba(255, 255, 255, 80%);
     background-color: rgba(0, 0, 0, 70%);
@@ -66,9 +65,41 @@ input::placeholder{
 }
 
 #nav-t-log{
-    margin-top: 0.6%;
+    margin-top: 0.7rem;
+}
+
+.name-category{
+    float: left;
+    color: white;
+    background-color: rgba(0, 0, 0, 30%);
+    margin: 0.7rem;
+    padding: 0.7rem;
+    transition: 0.3s;
+    border-radius: 2rem;
+    font-size: 23px;
+}
+
+.name-category:hover{
+    background-color: rgba(255, 255, 255, 90%);
+    color: #333;
+}
+
+#main-category{
+    padding: 6rem 1rem;
+    border-bottom: 1px solid #111;
 }
 
 main{
-    padding-top: 7%;
+    margin: 1rem auto;
+    padding: 3%;
+    font-size: 17px;
+}
+
+header{
+    text-align: center;
+}
+
+h2{
+    margin: 0 auto;
+    font-size: 40px;
 }
