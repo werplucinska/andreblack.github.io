@@ -8,8 +8,8 @@
     <body>
         <?php
             include('nav-inc.html');
-            include('cat-inc.html');
             include('main-inc.html');
+            //do wyswietlania itemow 'css grid'
         ?>
     </body>
 </html>

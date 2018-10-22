@@ -8,21 +8,22 @@ body{
 nav{
     float: left;
     width: 99%;
-    background-color: rgba(0, 0, 0, 70%);
+    background-color: rgba(0, 0, 0, 90%);
     padding: 0.5%;
     position: fixed;
 }
 
 input[type="search"]{
     border-radius: 1rem;
-    font-size: 16px;
+    font-size: 13px;
     height: 2rem;
     padding: 0.3rem 0.5rem;
     margin-top: 1.2rem;
     margin-left: 10%;
     border: 0px solid #000;
     color: rgba(255, 255, 255, 80%);
-    background-color: rgba(0, 0, 0, 70%);
+    background-color: rgba(0, 0, 0, 90%);
+    outline: none;
 }
 input::placeholder{
     color: rgba(150, 150, 150, 70%);
@@ -31,13 +32,18 @@ input::placeholder{
 #nav-right{
     margin-left: 1rem;
 }
-
 .nav-link-header{
     color: rgb(180, 0, 0);
     text-decoration: none;
     transition: 0.3s;
     font-size: 27px;
     margin-left: 0.8rem;
+}
+
+@media only screen and (max-width: 430px){
+    .nav-link-header{
+        font-size: 20px;
+    }
 }
 
 .nav-link-header:hover{
@@ -65,18 +71,25 @@ input::placeholder{
 }
 
 #nav-t-log{
-    margin-top: 0.7rem;
+    margin-top: 1rem;
+}
+
+
+@media only screen and (max-width: 560px){
+    #nav-t-log{
+        display: none;
+    }
 }
 
 .name-category{
     float: left;
     color: white;
-    background-color: rgba(0, 0, 0, 30%);
+    background-color: rgba(0, 0, 0, 60%);
     margin: 0.7rem;
-    padding: 0.7rem;
+    padding: 0.5rem;
     transition: 0.3s;
     border-radius: 2rem;
-    font-size: 23px;
+    font-size: 19px;
 }
 
 .name-category:hover{
@@ -85,13 +98,66 @@ input::placeholder{
 }
 
 #main-category{
-    padding: 6rem 1rem;
-    border-bottom: 1px solid #111;
+    display: block;
+    padding: 0.4rem 2rem;
+    float: left;
+}
+
+#collapse-category{
+    display: none;
+}
+
+@media only screen and (max-width: 940px) {
+    #main-category{
+        display: none;
+    }
+
+    #collapse-category{
+        display: block;
+        float: left;
+        margin-top: 1.5rem;
+    }
+    #collapse-category button[type="button"]{
+        background-color: rgba(0, 0, 0, 90%);
+        color: rgba(150, 150, 150, 70%);
+        border: none;
+        border-radius: 0.2rem;
+        margin-left: 1.8rem;
+        padding: 0.4rem 0.8rem;
+        cursor: pointer;
+        outline: none;
+    }
+    .active, #collapse-category button[type="button"]:hover {
+        background-color: #222;
+    }
+    .content {
+        padding: 1rem;
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 90%);
+        margin-top: 0.2rem;
+        margin-left: -1.3rem;
+        border-radius: 0.4rem;
+    }
+    .content a{
+        text-decoration: none;
+    }
+    .coll-name-category{
+        padding: 0.3rem;
+        color: white;
+        transition: 0.3s;
+        text-align: justify;
+        font-size: 14px;
+    }
+    .coll-name-category:hover{
+        color: darkred;
+    }
 }
 
 main{
-    margin: 1rem auto;
-    padding: 3%;
+    /*margin: 1rem auto;*/
+    padding: 7rem 3rem;
     font-size: 17px;
 }
 
