@@ -10,6 +10,7 @@
             include('nav-inc.html');
             include('main-inc.html');
             //do wyswietlania itemow 'css grid'
+            //koala-app scss
         ?>
     </body>
 </html>

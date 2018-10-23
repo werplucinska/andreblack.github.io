@@ -8,7 +8,7 @@ body{
 nav{
     float: left;
     width: 99%;
-    background-color: rgba(0, 0, 0, 90%);
+    background-color: rgba(0, 0, 0, 70%);
     padding: 0.5%;
     position: fixed;
 }
@@ -20,11 +20,17 @@ input[type="search"]{
     padding: 0.3rem 0.5rem;
     margin-top: 1.2rem;
     margin-left: 10%;
-    border: 0px solid #000;
+    border: 0px solid #fff;
     color: rgba(255, 255, 255, 80%);
     background-color: rgba(0, 0, 0, 90%);
     outline: none;
+    transition: 0.3s;
 }
+input[type="search"]:focus{
+    background-color: rgba(240, 240, 240, 90%);
+    color: black;
+}
+
 input::placeholder{
     color: rgba(150, 150, 150, 70%);
 }
@@ -83,7 +89,7 @@ input::placeholder{
 
 .name-category{
     float: left;
-    color: white;
+    color: darkred;
     background-color: rgba(0, 0, 0, 60%);
     margin: 0.7rem;
     padding: 0.5rem;
